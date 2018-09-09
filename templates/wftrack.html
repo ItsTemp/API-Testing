@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1>Warframe Tracking</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Sorties</h5>
+
+                {% for item in sorties["variants"] %}
+                <p>Location: {{item["node"]}}</p>
+                <p>Mission Type: {{item["missionType"]}}</p>
+                <p>Modifier: {{item["modifier"]}}</p>
+                <p>Modifier desc: {{item["modifierDescription"]}}</p>
+                <hr>
+
+                {% endfor %}
+            </div>
+            <div class="col-md-4">
+                <h5>Alerts</h5>
+                {% for item in alerts["mission"] %}
+                <p>{{item[0]["type"]}}</p>
+                <p>{{item[0]["faction"]}}</p>
+                <p>{{item[0]["node"]}}</p>
+                <p>{{item[0]["reward"]["credits"]}}</p>
+                <hr>
+                {% endfor %}
+            </div>
+            <div class=col-md-4">
+                <h5>Fissures</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}

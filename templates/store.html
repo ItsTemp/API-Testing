@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron text-center">
+    <div class="album py-5 bg-light">
+        <h1>Daily Store Items</h1>
+        <h4>Store Date: {{ stuff["date"] }} </h4>
+        <br>
+        <div class="container">
+            <div class="row">
+                {% for item in stuff["items"] %}
+                <div class="col-md-1 col-lg-4" style="padding-bottom: 20px;">
+                    <div class="card">
+                        <img class="card-img-top" src={{ item["item"]["image"] }} alt="" height=400px width=400px style="background-color: #343a40;">
+
+                        {% if item["item"]["rarity"] == "legendary" %}
+                        <div class="card-body" style="border-top: 4px solid; border-top-color: #FF8C00;">
+                            {% endif %}
+
+                            {% if item["item"]["rarity"] == "epic" %}
+                            <div class="card-body" style="border-top: 4px solid; border-top-color: #B146C2;">
+                                {% endif %}
+
+                                {% if item["item"]["rarity"] == "rare" %}
+                                <div class="card-body" style="border-top: 4px solid; border-top-color: #00B7C3;">
+                                    {% endif %}
+
+                                    {% if item["item"]["rarity"] == "uncommon" %}
+                                    <div class="card-body" style="border-top: 4px solid; border-top-color: #00CC6A;">
+                                        {% endif %}
+
+
+                                        <h4 class="card-title">
+                                            <a>{{ item["name"] }}</a>
+                                        </h4>
+                                        <p class="card-text">Price: {{ item["cost"] }}</p>
+                                        <p class="card-text">Rarity: {{ item["item"]["rarity"] }}</p>
+                                        <p class="card-text">Item Type: {{ item["item"]["type"] }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock%}
