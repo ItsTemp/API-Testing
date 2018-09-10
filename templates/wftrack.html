@@ -7,14 +7,14 @@
         <div class="row">
             <div class="col-md-4">
                 <h5>Sorties</h5>
-
+                <hr>
+                <br>
                 {% for item in sorties["variants"] %}
                 <p>Location: {{item["node"]}}</p>
                 <p>Mission Type: {{item["missionType"]}}</p>
                 <p>Modifier: {{item["modifier"]}}</p>
                 <p>Modifier desc: {{item["modifierDescription"]}}</p>
                 <hr>
-
                 {% endfor %}
             </div>
             <div class="col-md-4">

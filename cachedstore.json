@@ -1,27 +1,49 @@
 {
-    "date": "09-09-18",
+    "date": "10-09-18",
     "date_layout": "day-month-year",
     "items": [
         {
-            "cost": "1500",
+            "cost": "800",
             "featured": 1,
             "item": {
-                "captial": "outfit",
-                "image": "https://fortnite-public-files.theapinetwork.com/outfit/0dc2655bb57e534cdb5ea248fd367eee.png",
+                "captial": "pickaxe",
+                "image": "https://fortnite-public-files.theapinetwork.com/pickaxe/cf57c3a410a08e081aabda409b422c9b.png",
                 "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/3fe789a-17f6712-a4fd4a1-912829e.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/3a3f590-00dbd5b-a4d4091-7019365.png",
                     "featured": {
-                        "background": "https://fortnite-public-files.theapinetwork.com/image/3fe789a-17f6712-a4fd4a1-912829e/featured.png",
-                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/3fe789a-17f6712-a4fd4a1-912829e.png"
+                        "background": null,
+                        "transparent": null
                     },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/0dc2655bb57e534cdb5ea248fd367eee.png"
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/pickaxe/cf57c3a410a08e081aabda409b422c9b.png"
                 },
                 "obtained_type": "vbucks",
-                "rarity": "epic",
-                "type": "outfit"
+                "rarity": "rare",
+                "type": "pickaxe"
             },
-            "itemid": "3fe789a-17f6712-a4fd4a1-912829e",
-            "name": "Field Surgeon",
+            "itemid": "3a3f590-00dbd5b-a4d4091-7019365",
+            "name": "Anarchy Axe",
+            "refundable": 1
+        },
+        {
+            "cost": "800",
+            "featured": 1,
+            "item": {
+                "captial": "glider",
+                "image": "https://fortnite-public-files.theapinetwork.com/glider/97dad874358a5cfa61598821361586ed.png",
+                "images": {
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/4864757-102dcac-0c083d4-a4a2ae9.png",
+                    "featured": {
+                        "background": null,
+                        "transparent": null
+                    },
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/glider/97dad874358a5cfa61598821361586ed.png"
+                },
+                "obtained_type": "vbucks",
+                "rarity": "rare",
+                "type": "glider"
+            },
+            "itemid": "4864757-102dcac-0c083d4-a4a2ae9",
+            "name": "Stage Dive",
             "refundable": 1
         },
         {
@@ -29,197 +51,21 @@
             "featured": 1,
             "item": {
                 "captial": "outfit",
-                "image": "https://fortnite-public-files.theapinetwork.com/outfit/ad67ab1462915e58a6d1332280b2e8c7.png",
+                "image": "https://fortnite-public-files.theapinetwork.com/outfit/6992695641a65a77c8e4633ce1a61144.png",
                 "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/a43d402-cefd37e-7bbf721-e553c4f.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/8c421fe-05b74d8-00d8bb9-d7bc8ac.png",
                     "featured": {
-                        "background": "https://fortnite-public-files.theapinetwork.com/image/a43d402-cefd37e-7bbf721-e553c4f/featured.png",
-                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/a43d402-cefd37e-7bbf721-e553c4f.png"
+                        "background": "https://fortnite-public-files.theapinetwork.com/image/8c421fe-05b74d8-00d8bb9-d7bc8ac/featured.png",
+                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/8c421fe-05b74d8-00d8bb9-d7bc8ac.png"
                     },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/ad67ab1462915e58a6d1332280b2e8c7.png"
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/6992695641a65a77c8e4633ce1a61144.png"
                 },
                 "obtained_type": "vbucks",
                 "rarity": "legendary",
                 "type": "outfit"
             },
-            "itemid": "a43d402-cefd37e-7bbf721-e553c4f",
-            "name": "P.A.N.D.A Team Leader",
-            "refundable": 1
-        },
-        {
-            "cost": "1500",
-            "featured": 1,
-            "item": {
-                "captial": "outfit",
-                "image": "https://fortnite-public-files.theapinetwork.com/outfit/02941f39d19f7d0e9ce83f9f81f09bad.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/2cd685f-41f1e3e-e478765-93da1a8.png",
-                    "featured": {
-                        "background": "https://fortnite-public-files.theapinetwork.com/image/2cd685f-41f1e3e-e478765-93da1a8/featured.png",
-                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/2cd685f-41f1e3e-e478765-93da1a8.png"
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/02941f39d19f7d0e9ce83f9f81f09bad.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "epic",
-                "type": "outfit"
-            },
-            "itemid": "2cd685f-41f1e3e-e478765-93da1a8",
-            "name": "Triage Trooper",
-            "refundable": 1
-        },
-        {
-            "cost": "2000",
-            "featured": 1,
-            "item": {
-                "captial": "outfit",
-                "image": "https://fortnite-public-files.theapinetwork.com/outfit/0424531c5bc3bec418c53c7d8a8ff82f.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/c3a4196-e107207-a617cec-ef48916.png",
-                    "featured": {
-                        "background": "https://fortnite-public-files.theapinetwork.com/image/c3a4196-e107207-a617cec-ef48916/featured.png",
-                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/c3a4196-e107207-a617cec-ef48916.png"
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/0424531c5bc3bec418c53c7d8a8ff82f.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "legendary",
-                "type": "outfit"
-            },
-            "itemid": "c3a4196-e107207-a617cec-ef48916",
-            "name": "Cuddle Team Leader",
-            "refundable": 1
-        },
-        {
-            "cost": "1200",
-            "featured": 1,
-            "item": {
-                "captial": "glider",
-                "image": "https://fortnite-public-files.theapinetwork.com/glider/22dfd0b46f714d4993cecd9e61dce1d8.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/ad877cf-e04067e-ea30a7e-798732d.png",
-                    "featured": {
-                        "background": null,
-                        "transparent": null
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/glider/22dfd0b46f714d4993cecd9e61dce1d8.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "epic",
-                "type": "glider"
-            },
-            "itemid": "ad877cf-e04067e-ea30a7e-798732d",
-            "name": "Airlift",
-            "refundable": 1
-        },
-        {
-            "cost": "1500",
-            "featured": 1,
-            "item": {
-                "captial": "outfit",
-                "image": "https://fortnite-public-files.theapinetwork.com/outfit/d7d082624dddbde8a15de22687f305b3.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/6216ad8-faa878e-0421978-fb2da8c.png",
-                    "featured": {
-                        "background": "https://fortnite-public-files.theapinetwork.com/image/6216ad8-faa878e-0421978-fb2da8c/featured.png",
-                        "transparent": "https://fortnite-public-files.theapinetwork.com/featured/6216ad8-faa878e-0421978-fb2da8c.png"
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/d7d082624dddbde8a15de22687f305b3.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "epic",
-                "type": "outfit"
-            },
-            "itemid": "6216ad8-faa878e-0421978-fb2da8c",
-            "name": "Fireworks Team Leader",
-            "refundable": 1
-        },
-        {
-            "cost": "800",
-            "featured": 1,
-            "item": {
-                "captial": "pickaxe",
-                "image": "https://fortnite-public-files.theapinetwork.com/pickaxe/135bc02782daff10aa21ea93910c70a5.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/6cf7f08-840e33f-749cf69-2b672dd.png",
-                    "featured": {
-                        "background": null,
-                        "transparent": null
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/pickaxe/135bc02782daff10aa21ea93910c70a5.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "rare",
-                "type": "pickaxe"
-            },
-            "itemid": "6cf7f08-840e33f-749cf69-2b672dd",
-            "name": "Flatliner",
-            "refundable": 1
-        },
-        {
-            "cost": "1500",
-            "featured": 1,
-            "item": {
-                "captial": "glider",
-                "image": "https://fortnite-public-files.theapinetwork.com/glider/68e2f3dc47708254227bc11e3aabaeef.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/28dad80-86e5460-8852035-883ed08.png",
-                    "featured": {
-                        "background": null,
-                        "transparent": null
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/glider/68e2f3dc47708254227bc11e3aabaeef.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "epic",
-                "type": "glider"
-            },
-            "itemid": "28dad80-86e5460-8852035-883ed08",
-            "name": "Bear Force One",
-            "refundable": 1
-        },
-        {
-            "cost": "500",
-            "featured": 0,
-            "item": {
-                "captial": "emote",
-                "image": "https://fortnite-public-files.theapinetwork.com/emote/3ea0014f3fa591e050f11b548b35466f.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/4fe87eb-f35416b-4869b14-1bd9216.png",
-                    "featured": {
-                        "background": null,
-                        "transparent": null
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/emote/3ea0014f3fa591e050f11b548b35466f.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "rare",
-                "type": "emote"
-            },
-            "itemid": "4fe87eb-f35416b-4869b14-1bd9216",
-            "name": "Tidy",
-            "refundable": 1
-        },
-        {
-            "cost": "800",
-            "featured": 0,
-            "item": {
-                "captial": "outfit",
-                "image": "https://fortnite-public-files.theapinetwork.com/outfit/7e0e4a39a26ef3825a65e90b4f101ee1.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/afc9c0d-b86ffaa-f19aaf8-caaa28f.png",
-                    "featured": {
-                        "background": null,
-                        "transparent": null
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/7e0e4a39a26ef3825a65e90b4f101ee1.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "uncommon",
-                "type": "outfit"
-            },
-            "itemid": "afc9c0d-b86ffaa-f19aaf8-caaa28f",
-            "name": "Garrison",
+            "itemid": "8c421fe-05b74d8-00d8bb9-d7bc8ac",
+            "name": "Power Chord",
             "refundable": 1
         },
         {
@@ -227,43 +73,21 @@
             "featured": 0,
             "item": {
                 "captial": "pickaxe",
-                "image": "https://fortnite-public-files.theapinetwork.com/pickaxe/d7acef94c3fce59cb039968c2cb6372c.png",
+                "image": "https://fortnite-public-files.theapinetwork.com/pickaxe/1ac59840ac3a5f7722b85a7e32890e5a.png",
                 "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/570adfd-1d68fbd-41e7c47-c9d804f.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/f33b9ce-7202975-6778b2d-3fc30e2.png",
                     "featured": {
                         "background": null,
                         "transparent": null
                     },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/pickaxe/d7acef94c3fce59cb039968c2cb6372c.png"
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/pickaxe/1ac59840ac3a5f7722b85a7e32890e5a.png"
                 },
                 "obtained_type": "vbucks",
                 "rarity": "rare",
                 "type": "pickaxe"
             },
-            "itemid": "570adfd-1d68fbd-41e7c47-c9d804f",
-            "name": "Cutting Edge",
-            "refundable": 1
-        },
-        {
-            "cost": "500",
-            "featured": 0,
-            "item": {
-                "captial": "glider",
-                "image": "https://fortnite-public-files.theapinetwork.com/glider/c3ed47f1b4d37506e76f13733d2c8215.png",
-                "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/bc49e84-4d7a44b-8b19e4f-910e3f9.png",
-                    "featured": {
-                        "background": null,
-                        "transparent": null
-                    },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/glider/c3ed47f1b4d37506e76f13733d2c8215.png"
-                },
-                "obtained_type": "vbucks",
-                "rarity": "uncommon",
-                "type": "glider"
-            },
-            "itemid": "bc49e84-4d7a44b-8b19e4f-910e3f9",
-            "name": "Stealth",
+            "itemid": "f33b9ce-7202975-6778b2d-3fc30e2",
+            "name": "Studded Axe",
             "refundable": 1
         },
         {
@@ -271,21 +95,87 @@
             "featured": 0,
             "item": {
                 "captial": "outfit",
-                "image": "https://fortnite-public-files.theapinetwork.com/outfit/d524b8c766d0122534cfb270e346e5af.png",
+                "image": "https://fortnite-public-files.theapinetwork.com/outfit/8be817ab426daee8747b9a22778bc05a.png",
                 "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/5ce15b5-719cba3-924db99-429a4ef.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/453a8fa-f1d24c3-6bfcfc1-74fcd88.png",
                     "featured": {
                         "background": null,
                         "transparent": null
                     },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/d524b8c766d0122534cfb270e346e5af.png"
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/8be817ab426daee8747b9a22778bc05a.png"
                 },
                 "obtained_type": "vbucks",
                 "rarity": "rare",
                 "type": "outfit"
             },
-            "itemid": "5ce15b5-719cba3-924db99-429a4ef",
-            "name": "Fortune",
+            "itemid": "453a8fa-f1d24c3-6bfcfc1-74fcd88",
+            "name": "Recon Scout",
+            "refundable": 1
+        },
+        {
+            "cost": "1200",
+            "featured": 0,
+            "item": {
+                "captial": "outfit",
+                "image": "https://fortnite-public-files.theapinetwork.com/outfit/e994346b283bbf0ac682cffb3946e32e.png",
+                "images": {
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/2540ce7-37cc9f1-57e24e8-0b35176.png",
+                    "featured": {
+                        "background": null,
+                        "transparent": null
+                    },
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/outfit/e994346b283bbf0ac682cffb3946e32e.png"
+                },
+                "obtained_type": "vbucks",
+                "rarity": "rare",
+                "type": "outfit"
+            },
+            "itemid": "2540ce7-37cc9f1-57e24e8-0b35176",
+            "name": "Moniker",
+            "refundable": 1
+        },
+        {
+            "cost": "800",
+            "featured": 0,
+            "item": {
+                "captial": "glider",
+                "image": "https://fortnite-public-files.theapinetwork.com/glider/3de5277f7b372a97be4aca805ff8e2db.png",
+                "images": {
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/446ee1c-fd8ebb2-5f5e428-e3f1979.png",
+                    "featured": {
+                        "background": null,
+                        "transparent": null
+                    },
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/glider/3de5277f7b372a97be4aca805ff8e2db.png"
+                },
+                "obtained_type": "vbucks",
+                "rarity": "rare",
+                "type": "glider"
+            },
+            "itemid": "446ee1c-fd8ebb2-5f5e428-e3f1979",
+            "name": "Googly",
+            "refundable": 1
+        },
+        {
+            "cost": "200",
+            "featured": 0,
+            "item": {
+                "captial": "emote",
+                "image": "https://fortnite-public-files.theapinetwork.com/emote/77c282a391b32c141662d82f8ce6036e.png",
+                "images": {
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/0ed3ec7-0079b7c-1276584-8dbc4ad.png",
+                    "featured": {
+                        "background": null,
+                        "transparent": null
+                    },
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/emote/77c282a391b32c141662d82f8ce6036e.png"
+                },
+                "obtained_type": "vbucks",
+                "rarity": "uncommon",
+                "type": "emote"
+            },
+            "itemid": "0ed3ec7-0079b7c-1276584-8dbc4ad",
+            "name": "Waterworks",
             "refundable": 1
         },
         {
@@ -293,24 +183,24 @@
             "featured": 0,
             "item": {
                 "captial": "emote",
-                "image": "https://fortnite-public-files.theapinetwork.com/emote/e93c789aa02ca98979831853e4b53110.png",
+                "image": "https://fortnite-public-files.theapinetwork.com/emote/ea7ce459a8907a5748ff5b246d741841.png",
                 "images": {
-                    "background": "https://fortnite-public-files.theapinetwork.com/image/ee1107b-aeecb8b-a57f108-d0d2849.png",
+                    "background": "https://fortnite-public-files.theapinetwork.com/image/18fda98-5e83309-a0bd51c-883f160.png",
                     "featured": {
                         "background": null,
                         "transparent": null
                     },
-                    "transparent": "https://fortnite-public-files.theapinetwork.com/emote/e93c789aa02ca98979831853e4b53110.png"
+                    "transparent": "https://fortnite-public-files.theapinetwork.com/emote/ea7ce459a8907a5748ff5b246d741841.png"
                 },
                 "obtained_type": "vbucks",
                 "rarity": "epic",
                 "type": "emote"
             },
-            "itemid": "ee1107b-aeecb8b-a57f108-d0d2849",
-            "name": "Breakin&#39;",
+            "itemid": "18fda98-5e83309-a0bd51c-883f160",
+            "name": "Rock Out",
             "refundable": 1
         }
     ],
-    "rows": 14,
+    "rows": 9,
     "vbucks": "https://fortnite-public-files.theapinetwork.com/fortnite-vbucks-icon.png"
 }

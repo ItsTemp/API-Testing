@@ -3,13 +3,15 @@ import requests
 import os
 import data
 
-#0 = Cetus, 1=Alert, 2=fissure, 3=sortie
-Endpoints = ["https://api.warframestat.us/pc/cetusCycle", #0
-             "https://api.warframestat.us/pc/alerts", #1 
-             "https://api.warframestat.us/pc/fissures", #2
-             "https://api.warframestat.us/pc/sortie"] #3
+# 0 = Cetus, 1=Alert, 2=fissure, 3=sortie
+Endpoints = ["https://api.warframestat.us/pc/cetusCycle",  # 0
+             "https://api.warframestat.us/pc/alerts",  # 1
+             "https://api.warframestat.us/pc/fissures",  # 2
+             "https://api.warframestat.us/pc/sortie"]  # 3
 
-#Sends api request
+# Sends api request
+
+
 def WarframeAPIRequest(endpoint):
     url = (endpoint)
     header = {'content-type': 'application/x-www-form-urlencoded'}
@@ -18,18 +20,21 @@ def WarframeAPIRequest(endpoint):
     apidata = r.json()
     return apidata
 
-#Retrieves the sorties information
+# Retrieves the sorties information
+
+
 def RetrieveSorties():
     Sorties = WarframeAPIRequest(Endpoints[3])
     return Sorties
 
-#Retrieves alert information
+# Retrieves alert information
+
+
 def RetrieveAlerts():
     Alerts = WarframeAPIRequest(Endpoints[1])
     return Alerts
 
-
-#Gets the daily deals from worldstate json
+# Gets the daily deals from worldstate json
 def GetDailyDeals():
     basedir = os.path.abspath(os.path.dirname(__file__))
     data_json = basedir+'\world.json'
@@ -41,6 +46,39 @@ def GetDailyDeals():
 
     return DailyDeals
 
+def GetSortieTypes():
+    Sorties = RetrieveSorties()
+    sortietypes = []
 
+    for item in Sorties["variants"]:
+        sortietypes.append(item["missionType"])
+    
+    return sortietypes
 
+def GetSortieNodes():
+    Sorties = RetrieveSorties()
+    nodes = []
+
+    for item in Sorties["variants"]:
+        nodes.append(item["node"])
+    
+    return nodes
+
+def GetSortieModifier():
+    Sorties = RetrieveSorties()
+    modifier = []
+
+    for item in Sorties["variants"]:
+        modifier.append(item["modifier"])
+    
+    return modifier
+
+def GetSortieModifierDesc():
+    Sorties = RetrieveSorties()
+    modifierdesc = []
+
+    for item in Sorties["variants"]:
+        modifierdesc.append(item["modifierDescription"])
+    
+    return modifierdesc
 
