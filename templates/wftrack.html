@@ -5,8 +5,9 @@
     <div class="container">
         <h1 style="text-align: center">Warframe Tracking</h1>
         <div class="alert alert-success" role="alert" style="text-align: center">
-                Cetus Cycle: {{cetus["shortString"]}}
-              </div>
+            Cetus Cycle: {{cetus["shortString"]}} <br>
+            Earth Cycle: {{earth[0]}} to {% if earth[1] %} Night {% else %} Day {% endif %}
+        </div>
         <div class="row">
             <div class="col-md-4">
                 <h5 style="text-align: center">Sorties</h5>
@@ -43,14 +44,26 @@
                             <b>Reward:</b> {{item["mission"]["reward"]["asString"]}}
                         </p>
                         <small>Time left: {{item["eta"]}}</small>
-                        {% endfor %}
                     </a>
-
+                    {% endfor %}
                 </div>
             </div>
             <div class="col-md-4">
                 <h5 style="text-align: center">Fissures</h5>
                 <hr>
+                <div class="list-group">
+                    {% for item in fissures %}
+                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{{item["node"]}} <br> {{item["missionType"]}}</h5>
+                            <small>{{item["tier"]}}</small>
+                        </div>
+                        <p class="mb-1"><b>Faction:</b> {{item["enemy"]}}
+                        </p>
+                        <small>Time left: {{item["eta"]}}</small>
+                    </a>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

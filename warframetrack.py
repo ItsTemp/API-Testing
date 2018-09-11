@@ -3,82 +3,55 @@ import requests
 import os
 import data
 
-# 0 = Cetus, 1=Alert, 2=fissure, 3=sortie
-Endpoints = ["https://api.warframestat.us/pc/cetusCycle",  # 0
-             "https://api.warframestat.us/pc/alerts",  # 1
-             "https://api.warframestat.us/pc/fissures",  # 2
-             "https://api.warframestat.us/pc/sortie"]  # 3
-
 # Sends api request
-def WarframeAPIRequest(endpoint):
-    url = (endpoint)
-    header = {'content-type': 'application/x-www-form-urlencoded'}
-    apibody = {'language': 'en'}
-    r = requests.get(url, headers=header, data=apibody)
+def WarframeAPIRequest():
+    url = ("https://ws.warframestat.us/pc")
+    r = requests.get(url)
     apidata = r.json()
-    return apidata
+
+    #Directory of the locally saved worldstate json
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    data_json = basedir+'\world.json'
+
+    #Open and replace the current worldstate with the newly aquired json
+    with open(data_json, 'w') as outfile:  
+            json.dump(apidata, outfile)
+    
+    #After data has been replaced open the worldstate json
+    with open(data_json, encoding="utf8") as f:
+        cacheddata = json.load(f)
+
+    #Return the content of the json for parsing
+    return cacheddata
+
+#Save content of json into a variable, too lazy atm to add checks to function so this will save time and api calls
+WorldStateData = WarframeAPIRequest()
 
 # Retrieves the sorties information
 def RetrieveSorties():
-    Sorties = WarframeAPIRequest(Endpoints[3])
+    #Gets the data from the WorldStateData variable created above and filters out the sortie part which we need.
+    Sorties = WorldStateData["sortie"]
     return Sorties
 
 # Retrieves alert information
 def RetrieveAlerts():
-    Alerts = WarframeAPIRequest(Endpoints[1])
-    missions = []
-
+    Alerts = WorldStateData["alerts"]
     return Alerts
 
+# Retrieves alert information
+def RetrieveFissures():
+    fissures = WorldStateData["fissures"]
+    return fissures
+
 # Retrieves the certus time cycle
-def RetrieveCycle():
-    TimeCycle = WarframeAPIRequest(Endpoints[0])
+def RetrieveCetusCycle():
+    TimeCycle = WorldStateData["cetusCycle"]
     return TimeCycle
 
-# Gets the daily deals from worldstate json
-def GetDailyDeals():
-    basedir = os.path.abspath(os.path.dirname(__file__))
-    data_json = basedir+'\world.json'
+# Retrieves the certus time cycle
+def RetrieveEarthCycle():
+    TimeCycle = []
+    TimeCycle.append(WorldStateData["earthCycle"]["timeLeft"])
+    TimeCycle.append(WorldStateData["earthCycle"]["isDay"])
 
-    with open(data_json, encoding="utf8") as f:
-        data = json.load(f)
-
-    DailyDeals = data["DailyDeals"]
-
-    return DailyDeals
-
-def GetSortieTypes():
-    Sorties = RetrieveSorties()
-    sortietypes = []
-
-    for item in Sorties["variants"]:
-        sortietypes.append(item["missionType"])
-    
-    return sortietypes
-
-def GetSortieNodes():
-    Sorties = RetrieveSorties()
-    nodes = []
-
-    for item in Sorties["variants"]:
-        nodes.append(item["node"])
-    
-    return nodes
-
-def GetSortieModifier():
-    Sorties = RetrieveSorties()
-    modifier = []
-
-    for item in Sorties["variants"]:
-        modifier.append(item["modifier"])
-    
-    return modifier
-
-def GetSortieModifierDesc():
-    Sorties = RetrieveSorties()
-    modifierdesc = []
-
-    for item in Sorties["variants"]:
-        modifierdesc.append(item["modifierDescription"])
-    
-    return modifierdesc
+    return TimeCycle
