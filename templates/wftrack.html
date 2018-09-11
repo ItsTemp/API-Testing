@@ -1,34 +1,56 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<div class="jumbotron text-center">
+<div class="jumbotron">
     <div class="container">
-        <h1>Warframe Tracking</h1>
+        <h1 style="text-align: center">Warframe Tracking</h1>
+        <div class="alert alert-success" role="alert" style="text-align: center">
+                Cetus Cycle: {{cetus["shortString"]}}
+              </div>
         <div class="row">
             <div class="col-md-4">
-                <h5>Sorties</h5>
+                <h5 style="text-align: center">Sorties</h5>
                 <hr>
-                <br>
-                {% for item in sorties["variants"] %}
-                <p>Location: {{item["node"]}}</p>
-                <p>Mission Type: {{item["missionType"]}}</p>
-                <p>Modifier: {{item["modifier"]}}</p>
-                <p>Modifier desc: {{item["modifierDescription"]}}</p>
-                <hr>
-                {% endfor %}
+                <div class="list-group">
+                    {% for item in sorties["variants"] %}
+                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{{item["node"]}} <br> {{item["missionType"]}}</h5>
+                            <small></small>
+                        </div>
+                        <p class="mb-1"><b>Faction: {{sorties["faction"]}} </b> <br>
+                            <b>Boss: {{sorties["boss"]}}</b> <br>
+                            <b>Modifier:</b> {{item["modifier"]}}
+                        </p>
+                        <small>Time left: {{sorties["eta"]}}</small>
+                    </a>
+                    {% endfor %}
+                </div>
             </div>
             <div class="col-md-4">
-                <h5>Alerts</h5>
-                {% for item in alerts["mission"] %}
-                <p>{{item[0]["type"]}}</p>
-                <p>{{item[0]["faction"]}}</p>
-                <p>{{item[0]["node"]}}</p>
-                <p>{{item[0]["reward"]["credits"]}}</p>
+                <h5 style="text-align: center">Alerts</h5>
                 <hr>
-                {% endfor %}
+                <div class="list-group">
+                    {% for item in alerts %}
+                    <a class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{{item["mission"]["node"]}} <br> {{item["mission"]["type"]}}</h5>
+                            <small></small>
+                        </div>
+                        <p class="mb-1"><b>Faction:</b> {{item["mission"]["faction"]}} <br>
+                            <b>Level:</b> {{item["mission"]["minEnemyLevel"]}} - {{item["mission"]["maxEnemyLevel"]}}
+                            <br>
+                            <b>Reward:</b> {{item["mission"]["reward"]["asString"]}}
+                        </p>
+                        <small>Time left: {{item["eta"]}}</small>
+                        {% endfor %}
+                    </a>
+
+                </div>
             </div>
             <div class="col-md-4">
-                <h5>Fissures</h5>
+                <h5 style="text-align: center">Fissures</h5>
+                <hr>
             </div>
         </div>
     </div>

@@ -10,8 +10,6 @@ Endpoints = ["https://api.warframestat.us/pc/cetusCycle",  # 0
              "https://api.warframestat.us/pc/sortie"]  # 3
 
 # Sends api request
-
-
 def WarframeAPIRequest(endpoint):
     url = (endpoint)
     header = {'content-type': 'application/x-www-form-urlencoded'}
@@ -21,18 +19,21 @@ def WarframeAPIRequest(endpoint):
     return apidata
 
 # Retrieves the sorties information
-
-
 def RetrieveSorties():
     Sorties = WarframeAPIRequest(Endpoints[3])
     return Sorties
 
 # Retrieves alert information
-
-
 def RetrieveAlerts():
     Alerts = WarframeAPIRequest(Endpoints[1])
+    missions = []
+
     return Alerts
+
+# Retrieves the certus time cycle
+def RetrieveCycle():
+    TimeCycle = WarframeAPIRequest(Endpoints[0])
+    return TimeCycle
 
 # Gets the daily deals from worldstate json
 def GetDailyDeals():
@@ -81,4 +82,3 @@ def GetSortieModifierDesc():
         modifierdesc.append(item["modifierDescription"])
     
     return modifierdesc
-

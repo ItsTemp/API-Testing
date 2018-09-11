@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import requests
-from warframetrack import RetrieveAlerts, RetrieveSorties
+from warframetrack import RetrieveAlerts, RetrieveSorties, RetrieveCycle
 import time
 import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -51,32 +51,26 @@ def check_for_update():
 shop = check_for_update()
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=check_for_update, trigger="interval", minutes=20)
+scheduler.add_job(func=check_for_update, trigger="interval", minutes=6)
 scheduler.start()
 
 # Shut down the scheduler when exiting the app
 atexit.register(lambda: scheduler.shutdown())
 
 # Homepage
-
-
 @app.route('/')
 def home():
     return render_template('index.html')
 
 # Fortnite Store
-
-
 @app.route('/store')
 def store():
     return render_template('store.html', stuff=shop)
 
 # Warframe Tracker
-
-
 @app.route('/wftrack')
 def wftrack():
-    return render_template('wftrack.html', sorties=RetrieveSorties(), alerts=RetrieveAlerts(), sortiecount=1)
+    return render_template('wftrack.html', sorties=RetrieveSorties(), alerts=RetrieveAlerts(), cetus=RetrieveCycle())
 
 
 if __name__ == '__main__':
